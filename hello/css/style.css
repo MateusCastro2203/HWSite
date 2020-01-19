@@ -42,16 +42,21 @@ li:hover {
     border-radius: 50px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
-.inicio {
-    margin-top: 5%;
+#navbar {
+    color: black;
 }
 
+#inicial {
+    width: 100%;
+    margin-top: 7%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
 .title {
     text-align: center;
     font-weight: 800;
     color: transparent;
-    font-size: 120px;
+    font-size: 130px;
     background: url("../images/background.jpg");
     background-position: 40% 30%;
     -webkit-background-clip: text;
@@ -65,6 +70,10 @@ li:hover {
     color: #612F74;
 }
 
+#nossavisao {
+    margin-top: 20%;
+}
+
 .btn {
     position: relative;
     padding: 1.4rem 4.2rem;
@@ -76,7 +85,6 @@ li:hover {
     transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
     cursor: pointer;
     user-select: none;
-    margin-top: 20%;
 }
 
 .btn:before,
@@ -89,7 +97,7 @@ li:hover {
 
 .btn:hover {
     color: #612F74;
-    transition-delay: .1s;
+    transition-delay: .6s;
 }
 
 .btn:hover:before {
@@ -97,7 +105,7 @@ li:hover {
 }
 
 .btn:hover:after {
-    transition-delay: .2s;
+    transition-delay: .4s;
 }
 
 .from-right:before,
@@ -123,15 +131,151 @@ li:hover {
     width: 100%;
 }
 
-hr {
+.hrInicio {
+    border-color: #aaa;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 13%;
+}
+
+#sobre {
+    background: url("../images/Sobre.png");
+    background-size: 200%;
+    background-position: 50% 50%;
+}
+
+.tituloSobre {
+    text-transform: uppercase;
+    color: rgb(39, 9, 41);
+    text-align: center;
+    position: relative;
+    font-weight: 500px;
+    font-size: 80px;
+}
+
+.textoSobre {
+    text-align: center;
+    font-weight: 400px;
+    font-size: 40px;
+}
+
+.hrSobre {
     border-color: #aaa;
     box-sizing: border-box;
     width: 100%;
 }
 
-.tituloSobre {
+.titulosServicos {
     text-transform: uppercase;
     color: #612F74;
     text-align: center;
-    margin-top: 30%;
+    font-weight: 500px;
+    font-size: 70px;
+}
+
+.card {
+    background-color: transparent;
+}
+
+#card1img {
+    width: 50%;
+    position: relative;
+}
+
+#titulocard1 {
+    text-transform: uppercase;
+    color: #612F74;
+    text-align: center;
+    position: relative;
+    font-weight: 500px;
+}
+
+#textocard1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+#titulocard2 {
+    text-transform: uppercase;
+    color: #612F74;
+    text-align: center;
+    position: relative;
+    font-weight: 500px;
+}
+
+#textocard2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+#titulocard3 {
+    text-transform: uppercase;
+    color: #612F74;
+    text-align: center;
+    position: relative;
+    font-weight: 500px;
+}
+
+#textocard3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hrContato {
+    border-color: #aaa;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.titulosContato {
+    text-transform: uppercase;
+    color: #612F74;
+    text-align: center;
+    font-weight: 500px;
+    font-size: 70px;
+}
+
+.formulario {
+    width: 50%;
+    margin-top: 5%;
+    background-color: rgb(204, 204, 250);
+    border-radius: 15px;
+}
+
+#nome {
+    margin-top: 3%;
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+#email {
+    margin-top: 3%;
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+#mensagem {
+    margin-top: 3%;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+    background-color: transparent;
+}
+
+.enviar {
+    background-color: #612F74;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border-color: transparent;
+    margin-top: 10%;
 }

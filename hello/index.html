@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -31,7 +31,7 @@
         <img src="./images/hwcode.png" id="load" class=" load ">
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark " style="color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark " style="color: black;" id="topo">
         <div class="container-fluid">
 
             <div class="col-md-2 offset-md-1">
@@ -39,9 +39,7 @@
                     <img src="./images/hwcode.png" style=" width:70px; height:70px; "> HW code
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+
             <div class="col-md-3 offset-md-3">
                 <div class="collapse navbar-collapse " id="Links">
                     <ul class="navbar-nav">
@@ -49,7 +47,7 @@
                             <a class="nav-link" href="#Sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#Contato">Contato</a>
+                            <a class="nav-link " href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -58,25 +56,100 @@
     </nav>
 
 
-    <div class="container">
+    <div class="container" id="inicial">
         <div class="row">
             <div class="inicio col-md-8 offset-md-2">
                 <div class="title ">HW CODE</div>
                 <div class="subtitle "> Sua software house </div>
             </div>
             <div class="col-md-6 offset-md-3">
-                <a href="#Sobre" class=" btn from-right btn-block">nossa visão</a>
+                <a href="#sobre" class=" btn from-right btn-block" id="nossavisao">Quem Somos</a>
             </div>
         </div>
     </div>
+    <hr class="hrInicio">
     </hr>
-    <div class="container" id="Sobre">
+    <div class="container-fluid " id="sobre">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <h2 class="display-2 tituloSobre">Sobre</h2>
+                <h2 class=" tituloSobre" id="idSobre">Sobre</h2>
+                <p class="textoSobre" id="textoSobre">A empresa foi fundada em 2019, com o objetivo de maximizar os resultados de nossos clientes através do uso da tecnologia, sendo parceiro estratégico na criação de soluções e na prestação de serviços de TI</p>
             </div>
         </div>
     </div>
+    <hr class="hrSobre">
+    </hr>
+    <div class="container" id="servicos">
+
+        <h2 class="titulosServicos">Nossos Serviços</h2>
+        <br>
+
+
+        <div class="row">
+            <div class="col-md">
+                <div class="card card1">
+                    <img class="card-img-top" src="./images/sites.png" style="width: 50% ;position: relative; left: 25%;">
+                    <h3 class="card-title " id="titulocard1">Sites</h3>
+                    <p class="card-text" id="textocard1">Desenvolvemos o seu site sob medida! Auxiliamos na definição do escopo, processos e requisitos para alcançar os melhores resultados com a solução desenvolvida.</p>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="./images/manutencao.png" style="width: 45% ;position: relative; left: 25%;">
+                    <h3 class="card-title " id="titulocard2">Manutenção</h3>
+                    <p class="card-text" id="textocard2">Ofercemos manutenção para sites criados por outras empresas, efetuamos uma avaliação na programação com a intuito de verificar se nossa equipe tem o conhecimento necessário para realizar todos os ajustes necessários.</p>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="./images/monitor.png" style="width: 52% ;position: relative; left: 25%;">
+                    <h3 class="card-title " id="titulocard3">Sistemas</h3>
+                    <p class="card-text" id="textocard3">Desenvolvemos o sistema necessário para a sua empresa com foco em segurança e desempenho. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hrContato">
+    </hr>
+    <div class="container" id="contato">
+        <h2 class="titulosContato">Entre em contato</h2>
+        <div class="container formulario">
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <input type="text" id="nome" class="form-control" placeholder="SEU NOME" required>
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                        <input type="email" id="email" class="form-control " placeholder="SEU EMAIL" required>
+                    </div>
+                    <div class="col-md-6 offset-md-2">
+                        <textarea name="mensagem" id="mensagem" cols="46" rows="10" placeholder=" SUA MENSAGEM"></textarea>
+                    </div>
+                    <div class="col-md-6 offset-md-4">
+                        <button class="enviar" type="submit" id="enviar">Enviar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="color: black;">
+            <div class="container">
+
+                <div class="col-md-6 offset-md-3">
+                    <a href="#topo" class="navbar-brand ">
+                        <img src="./images/hwcode.png" style=" width:90px; height:90px; "> HW code
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </footer>
+
+
+
 
 
 
